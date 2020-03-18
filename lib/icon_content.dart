@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 const labeltextstyle =TextStyle(fontSize: 18,
        color: Color(0xFF8D8E98),);
 class IconContent extends StatelessWidget {
-  const IconContent({ this.mficons, this.label
+  const IconContent({ this.gendericons, this.label
     
    
   });
-   final IconData mficons;
+   final IconData gendericons;
    final String label;
 
   @override
@@ -15,7 +15,7 @@ class IconContent extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
         Icon(
-          mficons,
+          gendericons,
           size: 80.0,
           color: Colors.white,
 
