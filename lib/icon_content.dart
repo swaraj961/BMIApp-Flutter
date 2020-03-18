@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 const labeltextstyle =TextStyle(fontSize: 18,
-       color: Color(0xFF8D8E98),);
+ color: Color(0xFF8D8E98),);
 class IconContent extends StatelessWidget {
   const IconContent({ this.gendericons, this.label
     
