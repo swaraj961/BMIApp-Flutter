@@ -17,6 +17,8 @@ class InputPage extends StatefulWidget {
 class _InputPageState extends State<InputPage> {
   GenderType selectedgender;
   int height = 180;
+  int weight = 50;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -93,14 +95,17 @@ class _InputPageState extends State<InputPage> {
                         ),
                       ],
                     ),
-                    SliderTheme(data:SliderTheme.of(context).copyWith( 
-                      thumbColor: Color(0xFFEB1555),
-                      activeTrackColor:Color(0xFFEB1555),
-                      inactiveTrackColor: Color(0xFF8D8E98)  ,//taking only few property of theme data 
-thumbShape:RoundSliderThumbShape(enabledThumbRadius:15),
-overlayShape: RoundSliderOverlayShape(overlayRadius: 30 )
-                    ),
-                                          child: Slider(
+                    SliderTheme(
+                      data: SliderTheme.of(context).copyWith(
+                          thumbColor: Color(0xFFEB1555),
+                          activeTrackColor: Color(0xFFEB1555),
+                          inactiveTrackColor: Color(
+                              0xFF8D8E98), //taking only few property of theme data
+                          thumbShape:
+                              RoundSliderThumbShape(enabledThumbRadius: 15),
+                          overlayShape:
+                              RoundSliderOverlayShape(overlayRadius: 30)),
+                      child: Slider(
                         value: height.toDouble(),
                         min: 120,
                         max: 220,
@@ -123,6 +128,30 @@ overlayShape: RoundSliderOverlayShape(overlayRadius: 30 )
               children: <Widget>[
                 Expanded(
                   child: ReusableCard(
+                    cardchild: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text('WEIGHT', style: kLabeltextstyle),
+                        Text(
+                          '$weight',
+                          style: kNumberTextstyle,
+                        ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: <Widget>[
+                            RoundIconButton(iconinfo: FontAwesomeIcons.minus,
+                            ),
+                        
+                            SizedBox(
+                              width: 30,
+                            ),
+                           RoundIconButton(
+                             iconinfo: FontAwesomeIcons.plus,
+                           )
+                          ],
+                        ),
+                      ],
+                    ),
                     colour: kActivecolor,
                   ),
                 ),
@@ -145,5 +174,25 @@ overlayShape: RoundSliderOverlayShape(overlayRadius: 30 )
         ],
       ),
     );
+  }
+}
+
+class RoundIconButton extends StatelessWidget { //can be more customised
+  RoundIconButton({this.iconinfo ,this.colour
+  });
+  final IconData iconinfo;
+  final Color colour ;
+  @override
+  Widget build(BuildContext context) {
+    return RawMaterialButton(
+      onPressed:(){},
+      fillColor:Color(0xFF4C4F5E),
+      shape:CircleBorder(),
+      constraints:BoxConstraints.tightFor(width: 56, height: 56) ,
+      elevation: 6,
+      child:Icon(iconinfo,color: Colors.white,),
+      );
+      
+    
   }
 }
