@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:bmiapp/inputpage.dart';
+import 'screens/inputpage.dart';
 
 void main() => runApp(new MyApp());
 
