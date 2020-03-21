@@ -4,6 +4,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'reusable_card.dart';
 import 'icon_content.dart';
 import 'constants.dart';
+import 'Buttom_button.dart';
 
 enum GenderType {
   male,
@@ -208,38 +209,25 @@ class _InputPageState extends State<InputPage> {
           ),
 
           //pink lowerpart
-          GestureDetector(
-            onTap: (){
-              Navigator.push(context,MaterialPageRoute(builder: (context){
-                return ResultPage();
-              
-              }),
-              );
-              
+          ButtomButton(
+            ontap:  () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) {
+            return ResultPage();
+          }),
+        );
+      
             },
-                      child: Container(
-             padding: EdgeInsets.only(bottom: 6),
-              color: kButtomcontainercolor,
-              margin: EdgeInsets.only(top: 10),
-              width: double.infinity,
-              height: kButtomcontainerheight,
-               child: Row(
-                 mainAxisAlignment: MainAxisAlignment.center,
-                 children: <Widget>[
-
-                 Text('CALCULATE',style: TextStyle(
-                fontSize: 20,
-                   fontWeight: FontWeight.bold,
-                   color: Colors.white
-                 ),)
-               ],),
-            ),
+            buttontext: 'CALCULATE',
           ),
         ],
       ),
     );
   }
 }
+
+
 
 class RoundIconButton extends StatelessWidget {
   //can be more customised
