@@ -6,7 +6,7 @@
 
 # App UI 
 
-![Finished App](https://github.com/swaraj961/Quizzler/blob/master/images/quizzler-demo.gif)
+![Finished App](https://github.com/swaraj961/BMIBeautifulApp/blob/master/images/bmi-calc-demo.gif)
 
 A new Flutter project.
 
