@@ -7,6 +7,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData().copyWith(
         primaryColor: Color(0xFF0A0D22), //add oxff to use
         //  accentColor: Color(0XFFeb1555),
