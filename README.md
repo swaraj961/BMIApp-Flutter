@@ -1,8 +1,8 @@
-# BMI CALCULATOR -App
-![Icon](https://github.com/swaraj961/Quizzler/blob/master/images/ic_launcher.png)
-- Check your body mass index now for better health
+# BMI CALCULATOR ❤ -App 👨‍⚕️
+![Icon](https://github.com/swaraj961/BMIBeautifulApp/blob/master/images/ic_launcher.png)
+- Check your body mass index now for better health ❤
 ## Download apk 
-- https://www.shorturl.at/emIK7
+- https://www.shorturl.at/aGKLM
 
 # App UI 
 
