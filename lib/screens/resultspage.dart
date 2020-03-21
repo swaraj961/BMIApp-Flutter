@@ -4,11 +4,14 @@ import 'package:flutter/material.dart';
 import 'package:bmiapp/components/reusable_card.dart';
 
 class ResultPage extends StatelessWidget {
-  ResultPage({@required this.bmiresult,@required this.interpretationl,@required  this.resulttext});
+  ResultPage(
+      {@required this.bmiresult,
+      @required this.interpretationl,
+      @required this.resulttext});
 
-    final String bmiresult;
-    final String resulttext;
-    final String interpretationl;
+  final String bmiresult;
+  final String resulttext;
+  final String interpretationl;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,13 +27,12 @@ class ResultPage extends StatelessWidget {
         children: <Widget>[
           Expanded(
               child: Container(
-                padding: EdgeInsets.only(top:2),
-                child: Text('\t \t \t Your Result !!', style: kTittletextstyle)
-                )
-                ),
-                SizedBox(
-                 height: 5, 
-                ),
+                  padding: EdgeInsets.only(top: 2),
+                  child: Text('\t \t \t Your Result !!',
+                      style: kTittletextstyle))),
+          SizedBox(
+            height: 5,
+          ),
           Expanded(
             child: ReusableCard(
               colour: kActivecolor,
@@ -38,11 +40,10 @@ class ResultPage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
-                  Text(resulttext.toUpperCase() , style: kResulttextstyle),
+                  Text(resulttext.toUpperCase(), style: kResulttextstyle),
                   Text(bmiresult, style: kResultnumberstyle),
                   Text(
-                    interpretationl ,
-                    
+                    interpretationl,
                     style: kbmibodytextstyle,
                     textAlign: TextAlign.center,
                   )
@@ -52,7 +53,7 @@ class ResultPage extends StatelessWidget {
             flex: 6,
           ),
           ButtomButton(
-            ontap:(){
+            ontap: () {
               Navigator.pop(context);
             },
             buttontext: "RE-CALCULATE ",
@@ -62,4 +63,3 @@ class ResultPage extends StatelessWidget {
     );
   }
 }
- 

@@ -1,4 +1,12 @@
-# bmiapp
+# BMI CALCULATOR -App
+![Icon](https://github.com/swaraj961/Quizzler/blob/master/images/ic_launcher.png)
+- Check your body mass index now for better health
+## Download apk 
+- https://www.shorturl.at/emIK7
+
+# App UI 
+
+![Finished App](https://github.com/swaraj961/Quizzler/blob/master/images/quizzler-demo.gif)
 
 A new Flutter project.
 

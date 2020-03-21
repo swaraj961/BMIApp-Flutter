@@ -213,15 +213,15 @@ class _InputPageState extends State<InputPage> {
           //pink lowerpart
           ButtomButton(
             ontap: () {
-BmiBrain b1 = BmiBrain(height: height,weight: weight); //obj to get values and calculate 
-
-
+              BmiBrain b1 = BmiBrain(
+                  height: height,
+                  weight: weight); //obj to get values and calculate
 
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) {
                   return ResultPage(
-                    bmiresult:b1.bmicalculatoR() ,
+                    bmiresult: b1.bmicalculatoR(),
                     resulttext: b1.result(),
                     interpretationl: b1.getInterpretation(),
                   );
